@@ -12,7 +12,7 @@ This project shows how to deploy a Node.js web app on a Google Cloud Compute Eng
 
 Step 1: Create a Compute Engine VM
 
-gcloud compute instances create nodejs-instance \
+```gcloud compute instances create nodejs-instance \
   --zone=us-central1-a \
   --machine-type=e2-micro \
   --image-family=debian-11 \
@@ -25,7 +25,7 @@ gcloud compute instances create nodejs-instance \
     apt install -y nodejs
     git clone https://github.com/ozalakshay/gcp-node.git
     cd gcp-node
-    npm install'
+    npm install'```
 
 This will:
 
