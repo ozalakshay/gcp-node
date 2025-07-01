@@ -15,15 +15,7 @@ Step 1: Create a Compute Engine VM
   --machine-type=e2-micro \
   --image-family=debian-11 \
   --image-project=debian-cloud \
-  --tags=nodejs-app \
-  --metadata=startup-script='#! /bin/bash
-    apt update -y
-    apt install -y curl git
-    curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
-    apt install -y nodejs
-    git clone https://github.com/ozalakshay/gcp-node.git
-    cd gcp-node
-    npm install'</code></pre>
+  --tags=nodejs-app </code></pre>
 
 This will:
 
